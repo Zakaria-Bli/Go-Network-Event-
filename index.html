@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+
+    <link rel="stylesheet" href="./CSS/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="icon"
+    type="image/svg"
+    sizes="32x32"
+    href="./Image/Landing.svg"
+  />
+    <title>CELEC - Go Network</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./Image/Celec_Logo_Blue.svg" alt="CELEC Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#former">Former</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#archive">Archive</a></li>
+            <li><a href="#connection">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1><span>CELEC</span> Go Network</h1>
+          <p>
+            For several years, after 4 previous editions, 
+            the famous Cisco training has become a tradition within the CELEC club, 
+            reaching an average of 1200 participants from all regions of Algeria.
+            For this purpose, this year's edition will address the theme of cyber security 
+            which is a very wide field of information and knowledge,
+            making it eagerly awaited by students.
+            A new edition animated by the famous doctor Abderrazak Bachir BOUIDJRA.
+            This training will take place in 3 days and will be divided into 3 main 
+            aspects of security, namely networks, development and hacking systems.
+          </p>
+        </div>
+        <div class="image">
+          <img src="./Image/Landing.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="former" id="former">
+      <div class="right-section-heading">
+        <h2>Former</h2>
+        <img src="./Image/arrow.png" alt="arrow" />
+      </div>
+      <div class="container">
+        <div class="info">
+          <img src="./Image/Formateur.png" alt="Former img" />
+          <h3><span>Bachir Bouiadjra</span> Abderrazak</h3>
+        </div>
+        <div class="description">
+          <p>We are glad to present you our partner and trainer: 
+            Mr. Bachir Bouiadjra Abderrazak, a young Algerian talent 
+            aged 34 years. He is a lecturer and researcher at the 
+            University "Djilali Liabes" of Sidi Bel Abbes, and at 
+            the same time he is a network auditor and cisco instructor 
+            at the private vocational training institution "ICT TOWERS" 
+            present in Sidi Bel Abbes and recently in Algiers (exactly in Beb Ezzouar)
+          </p>
+        </div>
+        <span class="line"></span>
+      </div>
+    </div>
+    <div class="inscription" id="register">
+      <div class="left-section-heading">
+        <img src="./Image/arrow.png" alt="arrow" />
+        <h2>Register</h2>
+      </div>
+      <div class="container">
+        <form action="" id="inscription-form">
+          <div class="form">
+            <div class="input-info">
+              <input
+                type="text"
+                id="full-name"
+                class="form-input"
+                placeholder=" "
+                required
+              />
+              <label for="full-name">First & Last Name</label>
+            </div>
+            <div class="input-info">
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder=" "
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input-info">
+              <input
+                type="password"
+                id="password"
+                class="form-input left-border"
+                placeholder=" "
+                required
+              />
+              <label for="password">Password</label>
+            </div>
+            <div class="input-info">
+              <input
+                type="number"
+                id="phone-number"
+                class="form-input left-border"
+                placeholder=" "
+                required
+              />
+              <label for="phone-number">Phone Number</label>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input-info">
+              <select name="level" id="level" required>
+                <option selected disabled value="">Educational Level</option>
+                <option value="L1">Licence 1</option>
+                <option value="L2">Licence 2</option>
+                <option value="L3">Licence 3</option>
+                <option value="M1">Master 1</option>
+                <option value="M2">Master 2</option>
+                <option value="Doctorat">Doctoral Student</option>
+              </select>
+            </div>
+            <div class="input-info">
+              <input
+                type="text"
+                id="specialty-input"
+                class="form-input"
+                placeholder=" "
+                required
+              />
+              <label for="specialty-input"> Specialty </label>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input-info">
+              <input
+                type="number"
+                id="matricule"
+                class="form-input left-border"
+                placeholder=" "
+                required
+              />
+              <label for="matricule">Marticule</label>
+            </div>
+            <div class="input-info">
+              <input
+                type="number"
+                id="id-number"
+                class="form-input left-border"
+                placeholder=" "
+                required
+              />
+              <label for="id-number">ID Number</label>
+            </div>
+          </div>
+          <div class="radio-form">
+            <div class="radio">
+              <h3>Are you a student of the USTHB !</h3>
+              <div class="radio-label">
+                <label for="student-true">
+                  <input
+                    type="radio"
+                    id="student-true"
+                    value="yes"
+                    name="Usthb-student"
+                    required
+                  />
+                  <b>Yes</b>
+                  <span></span>
+                </label>
+                <label class="radio-label" for="student-false">
+                  <input
+                    type="radio"
+                    id="student-false"
+                    value="no"
+                    name="Usthb-student"
+                    required
+                  />
+                  <b>No</b>
+                  <span></span>
+                </label>
+              </div>
+            </div>
+            <div class="radio">
+              <h3>Are you a member of the CELEC club!</h3>
+              <div class="radio-label">
+                <label class="radio-label" for="membre-true">
+                  <input
+                    type="radio"
+                    id="membre-true"
+                    value="yes"
+                    name="CELEC-membre"
+                    required
+                  />
+                  <b>Yes</b>
+                  <span></span>
+                </label>
+                <label class="radio-label" for="membre-false">
+                  <input
+                    type="radio"
+                    id="membre-false"
+                    value="no"
+                    name="CELEC-membre"
+                    required
+                  />
+                  <b>No</b>
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn">
+            <button type="submit" form="inscription-form" value="Submit">
+              Submit
+            </button>
+          </div>
+        </form>
+        <div class="certificate">
+          <h3>Certificate Form</h3>
+          <form action="" id="certificat-form">
+            <div class="certificate-input">
+              <input
+                type="text"
+                id="certificate-full-name"
+                placeholder=" "
+                required
+              />
+              <label for="certificate-full-name"
+                >Write your first and last name</label
+              >
+            </div>
+            <button type="submit" form="certificat-form" value="Submit">
+              certificate example
+            </button>
+          </form>
+          <div class="remarque">
+            <h4>Note: <span>*</span></h4>
+            <p id="first-note">The first name must be fully capitalized</p>
+            <p id="second-note">
+              First letter of the last name in upper case and the rest in lower case
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="archive" id="archive">
+      <div class="right-section-heading">
+        <h2>Archive</h2>
+        <img src="./Image/arrow.png" alt="arrow" />
+      </div>
+        <div class="go-network-logo">
+          <img src="./Image/go_network_logo_b.png" 
+          alt="Go Network Logo">
+        </div>
+      <div class="container">
+        <div class="odd-year">
+        <div class="year">
+          <a href="./Archive/HTML/Archive2017.html" target="_blank"><img src="./Image/Archive-2021.png" alt=""></a>
+          <span>2017</span>
+        </div>
+        <div class="year">
+          <a href="./Archive/HTML/Archive2021.html" target="_blank"><img src="./Image/Archive-2021.png" alt=""></a>
+          <span>2021</span>
+        </div>
+      </div>
+      <div class="even-year">
+        <div class="year">
+          <a href="./Archive/HTML/Archive2019.html" target="_blank"><img src="./Image/Archive-2020.png" alt=""></a>
+          <span>2019</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="left-section-heading">
+        <img src="./Image/arrow.png" alt="arrow" />
+        <h2>Contact Us</h2>
+      </div>
+      <div class="container">
+        <div class="text">
+          <h3>For more information, you can contact us</h3>
+        </div>
+        <div class="form">
+          <form action="" id="contact-form">
+            <div class="form">
+              <div class="contact-info">
+                <input
+                  type="text"
+                  id="contact-name"
+                  class="form-input"
+                  placeholder=" "
+                  required
+                />
+                <label for="contact-name">Full Name</label>
+              </div>
+              <div class="contact-info">
+                <input
+                  type="email"
+                  id="contact-email"
+                  class="form-input left-border"
+                  placeholder=" "
+                  required
+                />
+                <label for="contact-email">email</label>
+              </div>
+              <div class="contact-info">
+                <textarea name="message" id="message" class="message" placeholder=" "></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button type="submit" 
+              form="contact-form" 
+              value="Submit">
+                <a href="" mailto:>Submit</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="cisco-logo">
+          <img src="./Image/go_network_logo_b.png" alt="">
+        </div>
+        <div class="social-media">
+          <a href="https://web.facebook.com/CELECUSTHB"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/celec_usthb/"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/celecusthb/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="connect">
+    <div class="container">
+      <div class="text">
+        <h3>Do you have an account?</h3>
+      </div>
+      <form action="" id="connect-form">
+        <div class="form">
+          <div class="input-info">
+            <input
+              type="email"
+              id="connection-email"
+              class="form-input"
+              placeholder=" "
+              required
+            />
+            <label for="connection-email">email</label>
+          </div>
+          <div class="input-info">
+            <input
+              type="password"
+              id="connection-password"
+              class="form-input"
+              placeholder=" "
+              required
+            />
+            <label for="connection-password">Password</label>
+          </div>
+        </div>
+        <div class="submit-btn">
+          <button type="submit" form="connect-form" value="Submit">
+            Sign In
+          </button>
+        </div>
+      </form>
+      <div class="social-media">
+        <a href="https://web.facebook.com/CELECUSTHB"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/celec_usthb/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/celecusthb/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <script src="./JS/main.js"></script>
+  </body>
+</html>
